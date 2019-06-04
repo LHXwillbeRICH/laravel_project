@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'zh-CN',
 
     /*
     |--------------------------------------------------------------------------
@@ -177,6 +177,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //调用oauth 协议所有的依赖包服务提供者
+        SocialiteProviders\Manager\ServiceProvider::class,
+        //Riverslei\UEditor\UEditorServiceProvider::class,
+
     ],
 
     /*
@@ -226,6 +230,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        //第三方安装的oauth协议的门面方法
+        'Socialite'=>Laravel\Socialite\Facades\Socialite::class,
     ],
 
 ];

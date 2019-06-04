@@ -62,6 +62,18 @@ return [
             'region' => env('AWS_DEFAULT_REGION'),
             'bucket' => env('AWS_BUCKET'),
         ],
+        'admin'=>[
+            'driver'=>'local',
+            'root'=>storage_path('app/public'),
+            'url' => env('APP_ADMIN_URL').'/storage',
+            'visibility' => 'public',
+        ],
+        'store'=>[
+            'driver'=>'local',
+            'root'=>storage_path('app/public'),
+            'url' => env('APP_STORE_URL').'/storage',
+            'visibility' => 'public',
+        ]
 
     ],
 

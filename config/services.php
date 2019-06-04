@@ -34,5 +34,22 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
-
+    'weixinweb'=>[
+        'client_id'=>env('WEIXINWEB_KEY'),
+        'client_secret'=>env('WEIXINWEB_SECRET'),
+        'redirect'=>env('WEIXINWEB_REDIRECT_URL'),
+        //'auth_base_uri'=>'https://open.weixin.qq.com/connect/qrconnect',
+    ],
+    'weixin'=>[
+        'client_id'=>env('WEIXIN_KEY'),
+        'client_secret'=>env('WEIXIN_SECRET'),
+        'redirect'=>env('WEIXIN_REDIRECT_URL'),
+        //'auth_base_uri'=>'https://open.weixin.qq.com/connect/qrconnect',
+    ],
+    'WXSHARE'=>[
+        'APP_KEY'=>env('WEIXIN_KEY'),
+        'APP_SECRET'=>env('WEIXIN_SECRET'),
+        'CALLBACK'=>env('WEIXIN_REDIRECT_URL'),
+        //'auth_base_uri'=>'https://open.weixin.qq.com/connect/qrconnect',
+    ]
 ];
