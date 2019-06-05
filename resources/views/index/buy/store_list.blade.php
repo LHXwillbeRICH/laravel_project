@@ -3,7 +3,7 @@
 <html style="font-size: 100px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="canonical" href="https://www.jiaoyitu.com/game_sch_sy/xxian/">
         <meta charset="utf-8">
-        <title>趴着玩</title>
+        <title>{{$title}}</title>
         <meta name="keywords" content="">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">

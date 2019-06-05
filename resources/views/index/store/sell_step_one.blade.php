@@ -9,7 +9,7 @@
   <meta name="format-detection" content="telephone=no, email=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>我要卖</title>
+  <title>{{$title}}</title>
   <meta content="" name="keywords">
   <meta content="" name="description">
   <link type="text/css" rel="stylesheet" href="{{asset('css')}}/sell/index.css" />
@@ -53,7 +53,7 @@
                 <input type="hidden" class="eforma" name="e_id" value="{{$type}}">
                 <ul id="eq">
                     @foreach($einfo as $k=>$v)
-                        <li name="flat" id="el{{$k}}" value="{{$v['e_id']}}"  class="border mb-20 color-000 fl @if($k==0) selected @endif" >{{$v['e_name']}}</li>
+                        <li name="flat" id="el{{$k}}" value="{{$v['e_id']}}"  class="border mb-20 color-000 fl " >{{$v['e_name']}}</li>
                     @endforeach
                 </ul>
             </div>

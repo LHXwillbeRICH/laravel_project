@@ -3,9 +3,9 @@
 <html style="font-size: 100px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="canonical" href="https://www.jiaoyitu.com/search/index">
     <meta charset="utf-8">
-    <title>趴着玩</title>
-    <meta name="keywords" content="趴着玩">
-    <meta name="description" content="趴着玩">
+    <title>{{$title}}</title>
+    <meta name="keywords" content="{{$title}}">
+    <meta name="description" content="{{$title}}">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" type="text/css" href="{{asset('css')}}/mui.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css')}}/jytM_style.css">

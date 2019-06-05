@@ -2,7 +2,7 @@
 <!-- saved from url=(0045)https://m.pazhewan.com/ucenter/modify_mobile/ -->
 <html style="font-size: 100px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title></title>
+    <title>{{$title}}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" type="text/css" href="{{asset('css')}}/mui.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css')}}/jytM_style.css">

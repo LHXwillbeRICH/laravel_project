@@ -102,13 +102,19 @@ class OrderController extends Controller
             return $this->price/100;
         });
         $grid->order_code('订单编号')->expand(function($model) use ($store){
+
             $info = $store->getStoreById($model->s_id);
-            $result = json_decode(json_encode($info),true);
-            unset($result['store_content']);
-            unset($result['store_sale']);
-            unset($result['equipment_id']);
-            unset($result['is_recommend']);
-            unset($result['review']);
+            if($info){
+                $result = json_decode(json_encode($info),true);
+                unset($result['store_content']);
+                unset($result['store_sale']);
+                unset($result['equipment_id']);
+                unset($result['is_recommend']);
+                unset($result['review']);
+            }else{
+                $result = [];
+            }
+
             return new \Encore\Admin\Widgets\Table(['商品id','商品名称','商品价格 单位分','商品类型 ','商品状态','商品编号','商品数量','游戏id','游戏区服','游戏账号','游戏密码','游戏角色名称','平台id','用户id'],[$result]);
         });
         $grid->status('状态')->select($this->order_status);

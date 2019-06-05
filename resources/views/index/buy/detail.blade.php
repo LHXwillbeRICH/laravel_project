@@ -3,7 +3,7 @@
 <html style="font-size: 100px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="canonical" href="https://www.jiaoyitu.com/game_sch_sy/4005">
 		
-		<title>首充号123</title>
+		<title>{{$title}}</title>
 		<meta name="keywords" content="王者传奇,王者传奇首充号,王者传奇交易平台,首充号交易平台,手游首充号,交易兔首充号,手游交易平台,交易兔">
 		<meta name="description" content="交易兔（www.jiaoyitu.com）王者传奇首充号安卓【72G】3.8元。安全、高效、免手续费的手游交易平台就上_交易兔！">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
@@ -134,9 +134,9 @@
         <div class="footer-conbtn">
            <a href="https://m.jiaoyitu.com/">手机版</a>
         </div>
-         <p>趴着玩网络技术有限公司</p>
-        <p>湖北省武汉市洪山区街10号中石大厦A栋5楼西区</p>
-        <p>版权所有 © www.pazhewan.com 鄂ICP备12010420号-9</p>
+	   <p>Copyright</p>
+	   <p> 2013-2017 www.shouchonghao.com 版权所有</p>
+	   <p> ICP证：京ICP备14049134号</p>
 
     </div>
 </div>

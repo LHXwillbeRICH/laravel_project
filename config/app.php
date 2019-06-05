@@ -234,4 +234,5 @@ return [
         'Socialite'=>Laravel\Socialite\Facades\Socialite::class,
     ],
 
+    'title'=>'交易兔游戏账号交易平台',
 ];

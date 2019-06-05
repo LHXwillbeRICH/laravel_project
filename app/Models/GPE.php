@@ -33,7 +33,7 @@ class GPE extends Model
      * @param $g_id
      */
     public function getAllInfoByGid($g_id){
-       return DB::table('game_plat_equipment as gpe')->select('e_name','plat_name','e_id','p_id')->join('equipment as e','e.id', '=', 'gpe.e_id')->join('plats as p','p.id' ,'=', 'gpe.p_id')->where('g_id',$g_id)->orderby('gpe.e_id')->get();
+       return DB::table('game_plat_equipment as gpe')->select('e_name','plat_name','e_id','p_id')->join('equipment as e','e.id', '=', 'gpe.e_id')->join('plats as p','p.id' ,'=', 'gpe.p_id')->where('g_id',$g_id)->orderby('gpe.id')->get();
     }
     /**
      * 根据条件获取所有的信息

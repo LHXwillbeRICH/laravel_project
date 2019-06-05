@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Providers;
+use Illuminate\Support\Facades\View;
 use Yansongda\Pay\Pay;
 use App\Models\Store;
 use Illuminate\Support\ServiceProvider;
@@ -15,6 +16,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        View::share("title",config('app.title'));
     }
 
     /**

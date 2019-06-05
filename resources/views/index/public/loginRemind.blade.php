@@ -2,7 +2,7 @@
 <html style="font-size: 100px;">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>登录跳转</title>
+    <title>{{$title}}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <style>
 
