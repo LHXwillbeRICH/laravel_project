@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-28T14:02:27.558Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="KhRprN9SBw3eyS5fMvN-" version="15.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-28T15:02:58.921Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="6sQKB1BDtV7ZyNrZUPWP" version="15.6.0" type="github">
   <diagram id="X5KQz3rxx_h_TQ3K8cYE" name="Page-1">
     <mxGraphModel dx="1613" dy="525" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -655,6 +655,142 @@
         </mxCell>
         <mxCell id="wXMktmDXNLtLzAhjk9bb-215" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;图7 生成省级关联表（车机使用）&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2660" y="1890" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-227" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-216" target="wXMktmDXNLtLzAhjk9bb-217">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-216" value="&lt;br&gt;开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="3420" y="170" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-228" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-217" target="wXMktmDXNLtLzAhjk9bb-218">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-217" value="&lt;br&gt;1.根据大版数据id 获取30条任务列表 （根据id 降序）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="3390" y="280" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-229" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-218" target="wXMktmDXNLtLzAhjk9bb-222">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-244" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-229">
+          <mxGeometry x="-0.284" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-239" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-218" target="wXMktmDXNLtLzAhjk9bb-226">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3740" y="1653" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3840" y="445" />
+              <mxPoint x="3840" y="1640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-243" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-239">
+          <mxGeometry x="-0.8545" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-218" value="&lt;br&gt;&lt;br&gt;出错或查询结果小于2" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="3400" y="399.5" width="140" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-231" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-219" target="wXMktmDXNLtLzAhjk9bb-220">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-219" value="从查询列表中取第一条数据作为base版本从第二条数据开始循环" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="3385" y="660" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-232" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-220" target="wXMktmDXNLtLzAhjk9bb-221">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-220" value="1.根据任务id，查询出当前项目下的所有省份列表（33个省）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="3385" y="776.25" width="170" height="67.5" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-233" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-221" target="wXMktmDXNLtLzAhjk9bb-223">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-230" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-222" target="wXMktmDXNLtLzAhjk9bb-219">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-222" value="&lt;br&gt;新增mu_product diff数据（备注：1个项目对应两条数据 ，全量数据，和 light数据）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="3385" y="530" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-234" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-223" target="wXMktmDXNLtLzAhjk9bb-224">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-246" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-234">
+          <mxGeometry x="-0.2571" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-223" target="wXMktmDXNLtLzAhjk9bb-226">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3840" y="1210" />
+              <mxPoint x="3840" y="1640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-245" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-242">
+          <mxGeometry x="-0.714" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-223" value="&lt;br&gt;&lt;br&gt;是否有error" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="3420" y="1160" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-235" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-224" target="wXMktmDXNLtLzAhjk9bb-225">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-247" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-235">
+          <mxGeometry x="-0.28" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-236" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-225" target="wXMktmDXNLtLzAhjk9bb-226">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-248" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-236">
+          <mxGeometry x="-0.5111" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-251" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-225">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3470" y="620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3720" y="1523" />
+              <mxPoint x="3720" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-225" value="&lt;br&gt;&lt;br&gt;30个增量包是否跑完" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="3410" y="1480" width="120" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-226" value="&lt;br&gt;结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="3420" y="1610" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-221" value="1.获取当前省份数据（bos获取）和 base数据当前省份做对比&lt;br&gt;以sd_link_id为准求出新增和删除的 sd_link_id&amp;nbsp;&lt;br&gt;&lt;br&gt;2.按照pb格式拼写数据&lt;br&gt;&lt;br&gt;3.上传bos地址&lt;br&gt;&lt;br&gt;4.mu_package 增加对应数据的记录" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="3373.75" y="930" width="192.5" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-249" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-224">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3470" y="880" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3590" y="1380" />
+              <mxPoint x="3590" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-250" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-249">
+          <mxGeometry x="-0.9147" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-224" value="&lt;br&gt;&lt;br&gt;当前省份列表是否跑完" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="3410" y="1330" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-252" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;图8 生成省级关联表增量包（车机使用）&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3420" y="1690" width="230" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
