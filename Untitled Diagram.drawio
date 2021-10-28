@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-27T14:41:44.970Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="X0uhg0M4pNvtAmHEugg8" version="15.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-28T14:02:27.558Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="KhRprN9SBw3eyS5fMvN-" version="15.6.0" type="github">
   <diagram id="X5KQz3rxx_h_TQ3K8cYE" name="Page-1">
-    <mxGraphModel dx="1613" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1613" dy="525" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -290,6 +290,371 @@
               <mxPoint x="430" y="250" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-112" value="&lt;br&gt;开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="170" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-113" value="&lt;br&gt;根据传入的大版单个城市bos地址获取，bidb文件" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="270" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-114" target="wXMktmDXNLtLzAhjk9bb-120">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1570" y="425" />
+              <mxPoint x="1570" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-128" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-126">
+          <mxGeometry x="-0.8756" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-114" value="&lt;br&gt;&lt;br&gt;下载bidb文件是否成功" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="380" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-115" target="wXMktmDXNLtLzAhjk9bb-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-115" value="根据传递的城市id(partitionId)和任务id(generateId)获取对应城市的sd数据" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="510" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.438;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-116" target="wXMktmDXNLtLzAhjk9bb-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-132" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-130">
+          <mxGeometry x="-0.3516" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-116" target="wXMktmDXNLtLzAhjk9bb-120">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1570" y="655" />
+              <mxPoint x="1570" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-134" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-133">
+          <mxGeometry x="-0.789" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-116" value="&lt;br&gt;&lt;br&gt;下载sd文件是否成功" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="610" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-117" target="wXMktmDXNLtLzAhjk9bb-118">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-136" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-135">
+          <mxGeometry x="-0.0667" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-117" value="解析sd pb文件，并按照指定字段，计算拼写好，写入到 bidb指定表中 （bd_sdr)&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="740" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-137" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-118" target="wXMktmDXNLtLzAhjk9bb-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-138" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-137">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-118" target="wXMktmDXNLtLzAhjk9bb-120">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1570" y="915" />
+              <mxPoint x="1570" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-143" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-142">
+          <mxGeometry x="-0.7761" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-118" value="&lt;br&gt;&lt;br&gt;写入bidb文件是否成功" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="870" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-139" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-119" target="wXMktmDXNLtLzAhjk9bb-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-119" value="&lt;br&gt;清空bidb文件中db_sdref表（关联表结果存储表）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="1020" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-120" value="&lt;br&gt;结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="1140" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-121" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.436;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-112" target="wXMktmDXNLtLzAhjk9bb-113">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1430" y="270" as="sourcePoint" />
+            <mxPoint x="1480" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-124" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.436;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1369.48" y="340" as="sourcePoint" />
+            <mxPoint x="1370.52" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1370.48" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-125" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.436;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1369.48" y="470" as="sourcePoint" />
+            <mxPoint x="1370.52" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-127" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-125">
+          <mxGeometry x="-0.4997" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-144" value="图4 生成关联表写入数据流程" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1285" y="1220" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-148" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-145" target="wXMktmDXNLtLzAhjk9bb-146">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-145" value="&lt;br&gt;开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="170" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-149" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-146" target="wXMktmDXNLtLzAhjk9bb-147">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-146" value="调用匹配算法.match_test 可执行文件" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-147" value="&lt;br&gt;结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="430" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-150" value="图5 生成关联表调用匹配算法" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1765" y="510" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-162" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-151" target="wXMktmDXNLtLzAhjk9bb-152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-151" value="&lt;br&gt;开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2180" y="170" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-163" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-152" target="wXMktmDXNLtLzAhjk9bb-153">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-152" value="&lt;br&gt;根据任务id查询任务详情，并判断是否需要继承操作&lt;br&gt;（新大版数据生成触发生成的任务不需要继承操作）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2140" y="270" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.468;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-153" target="wXMktmDXNLtLzAhjk9bb-154">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-164" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-155">
+          <mxGeometry x="-0.0437" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-165" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-153" target="wXMktmDXNLtLzAhjk9bb-156">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2440" y="449" />
+              <mxPoint x="2440" y="755" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-166" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-165">
+          <mxGeometry x="-0.7842" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-153" value="&lt;br&gt;&lt;br&gt;是否需要继承操作" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2165" y="408" width="130" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-159" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-154" target="wXMktmDXNLtLzAhjk9bb-156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-154" value="1.获取最新大版数据成果库（接口）&lt;br&gt;2.查询当前城市人工修复结果 （接口）&lt;br&gt;3.替换当前bidb文件关联表数据，并打上标识 （接口）&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2140" y="537" width="190" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-160" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-156" target="wXMktmDXNLtLzAhjk9bb-157">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-156" value="&lt;br&gt;清空bidb其他表数据除了 bd_sdr表和bd_sdref表（为了上传bos数据能小点）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2135" y="710" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-161" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-157" target="wXMktmDXNLtLzAhjk9bb-158">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-157" value="1.把关联表bidb文件 和 error.json 文件上传bos&lt;br&gt;2.删除bidb文件和产出的其余文件" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2135" y="875" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-158" value="&lt;br&gt;结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2185" y="1025" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-167" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;图6 生成关联表继承操作&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2155" y="1100" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-182" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-168" target="wXMktmDXNLtLzAhjk9bb-169">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-168" value="&lt;br&gt;开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2680" y="170" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-183" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-169" target="wXMktmDXNLtLzAhjk9bb-170">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-169" value="1.先获取当前关联表最大版本&lt;br&gt;2.获取当前大版数据下所有项目id及hd数据的map_version&lt;br&gt;3.获取当前大版数据下的所有城市id" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2640" y="280" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-184" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-170" target="wXMktmDXNLtLzAhjk9bb-171">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-193" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-184">
+          <mxGeometry x="-0.2759" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-170" target="wXMktmDXNLtLzAhjk9bb-181">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3090" y="440" />
+              <mxPoint x="3090" y="1840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-192" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-191">
+          <mxGeometry x="-0.8774" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-170" value="&lt;br&gt;&lt;br&gt;是否有error" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2670" y="399" width="120" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-185" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-171" target="wXMktmDXNLtLzAhjk9bb-174">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-171" value="1.拼接mu_product表数据，并添加 （备注：1个项目对应两条数据 ，全量数据，和 light数据）&lt;br&gt;&lt;br&gt;2.获取新增数据详情&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2630" y="538" width="200" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-195" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-172" target="wXMktmDXNLtLzAhjk9bb-176">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-172" value="&lt;br&gt;1.下载对应城市的bidb文件读取关联表，按照格式拼好，并写入文件 （同时生成全量数据和light数据两个文件）&lt;br&gt;2.单城市写完，删除对应的bidb文件" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2625" y="935" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-186" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-174" target="wXMktmDXNLtLzAhjk9bb-175">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-174" value="&lt;br&gt;获取全国和省份的关系列表（固定写死的33个城市）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2635" y="680" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-194" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-175" target="wXMktmDXNLtLzAhjk9bb-172">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-175" value="&lt;br&gt;获取单个省份下的所有城市列表 （Excel表中存储的对应关系）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2635" y="805" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-196" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-176" target="wXMktmDXNLtLzAhjk9bb-177">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-199" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-196">
+          <mxGeometry x="-0.2195" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-197" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-176" target="wXMktmDXNLtLzAhjk9bb-181">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2860" y="1840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3090" y="1119" />
+              <mxPoint x="3090" y="1840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-198" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-197">
+          <mxGeometry x="-0.7962" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-176" value="&lt;br&gt;&lt;br&gt;生成单城市是否出错" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2662.5" y="1069" width="135" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-200" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-177" target="wXMktmDXNLtLzAhjk9bb-178">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-207" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-177">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2730" y="900" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2870" y="1260" />
+              <mxPoint x="2870" y="900" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-177" value="&lt;br&gt;&lt;br&gt;当前省份城市是都已&lt;br&gt;写完" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2662.5" y="1210" width="135" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-201" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-178" target="wXMktmDXNLtLzAhjk9bb-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-178" value="1.将当前省级数据上传bos&lt;br&gt;2.对应mu_package表增加当前省份对应数据详情" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2640" y="1365" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-202" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-179" target="wXMktmDXNLtLzAhjk9bb-180">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-211" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-202">
+          <mxGeometry x="-0.16" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-208" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-179" target="wXMktmDXNLtLzAhjk9bb-181">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2790" y="1850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3090" y="1530" />
+              <mxPoint x="3090" y="1840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-210" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-208">
+          <mxGeometry x="-0.7863" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-179" value="&lt;br&gt;&lt;br&gt;是否有error" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2662.5" y="1480" width="135" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-203" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-180" target="wXMktmDXNLtLzAhjk9bb-181">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-214" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-203">
+          <mxGeometry x="-0.125" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-212" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="wXMktmDXNLtLzAhjk9bb-180">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2730" y="770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2980" y="1680" />
+              <mxPoint x="2980" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-213" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wXMktmDXNLtLzAhjk9bb-212">
+          <mxGeometry x="-0.8741" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-180" value="&lt;br&gt;&lt;br&gt;省份列表是否跑完" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2662.5" y="1630" width="135" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-181" value="&lt;br&gt;结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2680" y="1810" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wXMktmDXNLtLzAhjk9bb-215" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;图7 生成省级关联表（车机使用）&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2660" y="1890" width="220" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
